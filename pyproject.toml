@@ -1,0 +1,23 @@
+[project]
+name = "spine"
+authors = [
+    { name = "Nishith Singh", email = "nishith.singh@ril.com"}
+]
+description = "Adapter for integrating over Kafka topics"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+        "watchfiles~=0.24.0",
+        "aiokafka~=0.11.0",
+        "confluent-kafka~=2.5.3"
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
