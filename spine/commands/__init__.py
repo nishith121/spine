@@ -1,6 +1,6 @@
 import logging
 import click
-from watchgod import run_process
+from watchfiles import run_process
 from frappe.commands import pass_context, get_site
 
 log = logging.getLogger(__name__)
